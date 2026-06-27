@@ -1,0 +1,10 @@
+New Note Diagram
+
+```mermaid
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>+server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa, note JSON in req body
+    server-->>-browser: RES 201, JSON, note created in server
+```
